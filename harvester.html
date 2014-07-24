@@ -1,0 +1,21 @@
+<head>
+  <title>harvester</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+
+    <h2>Projects</h2>
+    {{#each projects}}
+        {{#each this}}
+            <h3>Name: {{project.code}}</h3>
+        {{/each}}
+    {{/each}}
+
+</template>
